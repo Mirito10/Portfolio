@@ -10,7 +10,9 @@ export const StarBackground = () => {
 
         for (let i = 0; i < 9; i++) spawnMeteor();
 
-        const handleResize = () => generateStars();
+        const handleResize = () =>{
+            generateStars();
+        } 
         window.addEventListener("resize", handleResize);
 
         return () => window.removeEventListener("resize", handleResize);

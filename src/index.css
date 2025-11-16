@@ -133,7 +133,7 @@
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-large;
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg
 }
 
 @utility gradient-border {
