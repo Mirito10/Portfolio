@@ -10,6 +10,37 @@ const navItems = [
     { name: 'Contact', href: "#contacts" },
 ]
 
+export const HolaMultilenguaje = () => {
+    const palabras = [
+        "Hola",        // Español
+        "Hello",       // Inglés
+        "Bonjour",     // Francés
+        "Ciao",        // Italiano
+        "Hallo",       // Alemán
+        "Olá",         // Portugués
+        "Konnichiwa",  // Japonés
+        "안녕하세요",      // Coreano
+        "你好",          // Chino
+        "مرحبا",        // Árabe
+    ];
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % palabras.length);
+        }, 2000); // cambia cada 2 segundos
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <span className="text-primary font-bold transition-all duration-500">
+            {palabras[index]}
+        </span>
+    );
+};
+
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +67,9 @@ export const Navbar = () => {
                      href=""
                      >
                         <span className="relative z-10">
-                            <span className="text-glow text-foreground"> MiritoTech </span> Portfolio
+                            <span className="text-glow text-foreground">
+                                <HolaMultilenguaje />
+                            </span>
                         </span>
                     </a>
 
