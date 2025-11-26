@@ -13,7 +13,7 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-3"> Calderon</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                        Poner Descripcion aqui HeroSection
+                        Junior Cloud Engineer & Software Developer focused on building scalable cloud and web solutions with modern technologies.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
