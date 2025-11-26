@@ -8,18 +8,35 @@ const skills =[
     {name: "Tailwind CSS", level: "Advanced", category: "Frontend"},
     {name: "JavaScript", level: "Advanced", category: "Frontend"},
 
-    {name: "Python", level: "Advanced", category: "Backend"},
-    {name: "C", level: "Advanced", category: "Backend"},
-    {name: "C++", level: "Advanced", category: "Backend"},
-    {name: "C#", level: "Advanced", category: "Backend"},
+    {name: "Node.js", level: "Advanced", category: "Backend"},
+    {name: ".NET", level: "Advanced", category: "Backend"},
+    {name: "Java", level: "Advanced", category: "Backend"},
+    {name: "REST APIs", level: "Advanced", category: "Backend"},
+    {name: "SignalR", level: "Medium", category: "Backend"},
+    {name: "MCP", level: "Medium", category: "Backend"},
+
+    {name: "SQL", level: "Advanced", category: "Database"},
+    {name: "MongoDB", level: "Medium", category: "Database"},
+    {name: "Stored Procedures", level: "Advanced", category: "Database"},
+    {name: "Pandas", level: "Medium", category: "Data"},
+
+    {name: "Windows PowerShell", level: "Advanced", category: "Systems"},
+    {name: "Linux", level: "Medium", category: "Systems"},
 
     {name: "Git/GitHub", level: "Advanced", category: "Tools"},
     {name: "Figma", level: "Medium", category: "Tools"},
     {name: "VS Code", level: "Advanced", category: "Tools"},
+
+    {name: "AWS", level: "Medium", category: "Cloud"},
+    {name: "Google Cloud Platform", level: "Medium", category: "Cloud"},
+    {name: "Docker", level: "Medium", category: "DevOps"},
+    {name: "Kubernetes", level: "Medium", category: "DevOps"},
+    {name: "Jenkins", level: "Medium", category: "DevOps"},
+
     /*hacer uno de estos por cada skill*/
 ];
 
-const categories = ["all", "Frontend", "Backend", "Tools"];
+const categories = ["all", "Frontend", "Backend", "Tools", "DevOps", "Cloud", "Systems", "Data", "Database"];
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
