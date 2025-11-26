@@ -12,29 +12,21 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Web Developer & Tech Creator
+                            Computer Engineering Student & Cloud Enthusiast
                         </h3>
 
                         <p className="text-muted-foreground">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum.
+                             I am a Computer Systems Engineering student at Universidad Latina de Costa Rica, 
+                             with a strong focus on Cloud Computing and modern software solutions. I am passionate 
+                             about designing, building, and optimizing scalable systems using cloud-based 
+                             technologies.
                         </p>
 
                         <p className="text-muted-foreground">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum.
+                            My main area of interest is Cloud Computing, complemented by secondary interests 
+                            in Artificial Intelligence and Data Analysis. I am currently earning certifications 
+                            in AWS and Google Cloud, and I already hold several cloud-related certifications, 
+                            strengthening both my theoretical knowledge and practical skills.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -42,8 +34,8 @@ export const AboutSection = () => {
                             <a href="#contact" className="cosmic-button">
                                 Get in Touch
                             </a>
-                            <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primay/10 transition-colors duration-300">
-                                Poner link CV
+                            <a href="/projects/Resume/CV_Mathias_Calderon.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primay/10 transition-colors duration-300">
+                                Resume
                             </a>
 
                         </div>
@@ -57,11 +49,11 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">
-                                        Web Development
+                                        Cloud Computing
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications
-                                         with modern frameworks
+                                        Building and managing scalable cloud solutions using platforms like AWS and 
+                                        Google Cloud, with a focus on best practices and security.
                                     </p>
                                 </div>
                             </div>
@@ -73,11 +65,11 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">
-                                        Web Development
+                                        Artificial Intelligence
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications
-                                         with modern frameworks
+                                        Exploring machine learning and AI concepts to create smarter applications and 
+                                        data-driven solutions.
                                     </p>
                                 </div>
                             </div>
@@ -89,11 +81,11 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">
-                                        Web Development
+                                        Data Analysis
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Creating responsive websites and web applications
-                                         with modern frameworks
+                                        Analyzing and interpreting data to extract insights that support decision-making 
+                                        and improve system performance.
                                     </p>
                                 </div>
                             </div>
