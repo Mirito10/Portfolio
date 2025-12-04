@@ -1,6 +1,6 @@
 # 🌐 Personal Web Portfolio – Mathias Calderón
 
-# THIS WEB IS STILL UNDER DEVELOPING
+# Currently under development
 
 Welcome to my personal web portfolio!  
 This project showcases who I am, my technical skills, and the projects I’ve worked on as a **Systems Engineering student** with a strong interest in **Cloud Computing, Artificial Intelligence, and Full-Stack Web Development**.
