@@ -1,13 +1,65 @@
 import { Mail, MessageCircle, MapPin, Send, Linkedin, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import ReactMarkdown from "react-markdown";
+import { chatApi } from "../api/chatApi";
 
 
 export const ContactSection = () => {
+
+    const [mensajes, setMensajes] = useState([]);
+    const [input, setInput] = useState("");
+
+    const getCurrentTime = () =>
+        new Date().toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+
+
+    const handleSend = async () => {
+        if (!input.trim()) return;
+
+        console.log("USING API BASE URL:", chatApi.defaults.baseURL);
+
+        const userMessage = {
+            role: "user",
+            content: input,
+            time: getCurrentTime(),
+        };
+
+        setMensajes(prev => [...prev, userMessage]);
+        setInput("");
+
+        try {
+            const history = [...mensajes, userMessage].map(({ role, content }) => ({
+            role,
+            content,
+            }));
+
+            const response = await chatApi.post("/chat", {
+            message: input,
+            history,
+            });
+
+            const botMessage = {
+            role: "assistant",
+            content: response.data.reply,
+            time: getCurrentTime(),
+            };
+
+            setMensajes(prev => [...prev, botMessage]);
+        } catch (error) {
+            console.error("Error en la API:", error);
+        }
+    };
+
     return (
        <section id="contact" className="py-24 px-4 relative bg-secondary/30">
 
             <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font:bold mb-4 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     Get In <span className="text-primary">Touch</span>
                 </h2>
 
@@ -71,51 +123,51 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className="bg-card p-8 rounded-lg shadow-xs">
-                        <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+                    <motion.div>
+                        <div className="bg-primary text-white p-3 font-semibold">
+                            Ask me something
+                        </div>
 
-                        <form className="space-y-6">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
-                                <input 
-                                    type="text" 
-                                    id="name"
-                                    name="name"
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="Enter your name"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium mb-2">Your Email</label>
-                                <input 
-                                    type="email" 
-                                    id="email"
-                                    name="email"
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                                    placeholder="Enter your email"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium mb-2">Your Message</label>
-                                <input 
-                                    id="message"
-                                    name="message"
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                                    placeholder="Hello, I´d like to talk about..."
-                                    required
-                                />
-                            </div>
+                        <div className="flex-1 p-3 overflow-y-auto space-y-2 bg-gray-50">
+                            {mensajes.map((msg, i) => (
+                                <div
+                                    key={i}
+                                    className={`max-w-xs px-3 py-2 rounded-xl text-sm ${
+                                        msg.role === 'user'
+                                            ? 'ml-4 bg-orange-500 text-white'
+                                            : 'mr-4 bg-gray-200 text-gray-800'
+                                    }`}
+                                >
+                                    <div>
+                                        <ReactMarkdown>{msg.content}</ReactMarkdown>
+                                    </div>
+                                    <div
+                                        className={`text-[8px] italic mt-1 ${
+                                            msg.role === 'user' ? 'text-white text-right' : 'text-gray-500 text-left'
+                                        }`}
+                                    >Enviado: {msg.time}</div>
+                                </div>
+                            ))}
+                        </div>
 
-                            <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
-
-                            )}>
-                                Send Message
-                                <Send size={16} />
+                        <div className="p-2 border-t border-gray-200 flex items-center bg-white text-gray-700">
+                            <input
+                                type="text"
+                                className="flex-1 p-2 text-sm border border-gray-300 rounded-xl focus:outline-none"
+                                placeholder="Escribe tu mensaje..."
+                                value={input}
+                                onChange={e => setInput(e.target.value)}
+                                onKeyDown={e => e.key === 'Enter' && handleSend()}
+                            />
+                            <button
+                                onClick={handleSend}
+                                className="ml-2 px-3 py-2 text-sm bg-blue-500 text-white rounded-xl hover:bg-blue-400"
+                            >
+                                Enviar
                             </button>
-                        </form>
-                    </div>
+                        </div>
+                    </motion.div>
+
                 </div>
             </div>
        </section> 
