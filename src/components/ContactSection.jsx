@@ -123,19 +123,20 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-                    <motion.div>
-                        <div className="bg-primary text-white p-3 font-semibold">
+                    <motion.div className="flex flex-col h-[500px] max-h-[500px] w-full max-w-md rounded-xl border border-border shadow-lg overflow-hidden bg-card">
+                        <div className="bg-primary text-primary-foreground p-3 font-semibold text-glow">
                             Ask me something
                         </div>
 
-                        <div className="flex-1 p-3 overflow-y-auto space-y-2 bg-gray-50">
+                        <div className="flex-1 p-3 overflow-y-auto space-y-3 bg-background">
                             {mensajes.map((msg, i) => (
                                 <div
                                     key={i}
                                     className={`max-w-xs px-3 py-2 rounded-xl text-sm ${
-                                        msg.role === 'user'
-                                            ? 'ml-4 bg-orange-500 text-white'
-                                            : 'mr-4 bg-gray-200 text-gray-800'
+                                    msg.role === "user"
+                                        ? "ml-4 bg-primary text-primary-foreground"
+                                        : "mr-4 bg-card text-foreground border border-border"
+
                                     }`}
                                 >
                                     <div>
@@ -145,25 +146,28 @@ export const ContactSection = () => {
                                         className={`text-[8px] italic mt-1 ${
                                             msg.role === 'user' ? 'text-white text-right' : 'text-gray-500 text-left'
                                         }`}
-                                    >Enviado: {msg.time}</div>
+                                    >Sent: {msg.time}</div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="p-2 border-t border-gray-200 flex items-center bg-white text-gray-700">
+                        <div className="p-2 border-t border-border flex items-center bg-card">
                             <input
                                 type="text"
-                                className="flex-1 p-2 text-sm border border-gray-300 rounded-xl focus:outline-none"
-                                placeholder="Escribe tu mensaje..."
+                                className="flex-1 p-2 text-sm rounded-xl
+                                            bg-background border border-border
+                                            text-foreground
+                                            focus:outline-none focus:ring-2 focus:ring-primary"
+                                placeholder="Message..."
                                 value={input}
                                 onChange={e => setInput(e.target.value)}
                                 onKeyDown={e => e.key === 'Enter' && handleSend()}
                             />
                             <button
                                 onClick={handleSend}
-                                className="ml-2 px-3 py-2 text-sm bg-blue-500 text-white rounded-xl hover:bg-blue-400"
+                                className="ml-2 cosmic-button text-sm px-4"
                             >
-                                Enviar
+                                Send
                             </button>
                         </div>
                     </motion.div>
