@@ -64,10 +64,15 @@ export const ContactSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    The chatbot below is designed to answer questions about Mathias Calderón, including his professional experience, projects, skills, degrees, certifications, and any other topics related to his portfolio.  
                 </p>
-
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                    If you ask a question that cannot be answered, it will be forwarded directly to Mathias Calderón for review.
+                </p>
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                    If you would like Mathias to contact you directly, feel free to leave your contact information in the chatbot or make click in the option below for you to contact me.
+                </p>
+                    
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
                         <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
@@ -123,7 +128,7 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-                    <motion.div className="flex flex-col h-[500px] max-h-[500px] w-full max-w-md rounded-xl border border-border shadow-lg overflow-hidden bg-card">
+                    <motion.div className="flex flex-col h-[400px] max-h-[400px] w-full max-w-md rounded-xl border border-border shadow-lg overflow-hidden bg-card">
                         <div className="bg-primary text-primary-foreground p-3 font-semibold text-glow">
                             Ask me something
                         </div>
