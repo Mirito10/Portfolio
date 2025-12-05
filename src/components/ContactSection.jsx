@@ -70,7 +70,7 @@ export const ContactSection = () => {
                     If you ask a question that cannot be answered, it will be forwarded directly to Mathias Calderón for review.
                 </p>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    If you would like Mathias to contact you directly, feel free to leave your contact information in the chatbot or make click in the option below for you to contact me.
+                    If you would like Mathias to contact you directly, feel free to leave your contact information in the chatbot or make click in the options below for you to contact me.
                 </p>
                     
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
