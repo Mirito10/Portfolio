@@ -15,7 +15,7 @@ const skills =[
     {name: "Java", level: "Advanced", category: "Backend", logo: "/images/brands/java.svg"},
     {name: "REST APIs", level: "Advanced", category: "Backend"},
     {name: "SignalR", level: "Medium", category: "Backend"},
-    {name: "MCP", level: "Medium", category: "Backend"},
+    {name: "MCP", level: "Medium", category: "Tools"},
 
     {name: "SQL", level: "Advanced", category: "Database", logo: "/images/brands/sql.svg"},
     {name: "MongoDB", level: "Medium", category: "Database", logo: "/images/brands/mdb.svg"},
