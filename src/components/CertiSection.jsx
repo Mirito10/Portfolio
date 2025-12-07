@@ -7,7 +7,7 @@ const certis = [
         title: "Amazon CloudWatch",
         description: "Foundational knowledge in monitoring AWS resources, creating dashboards, setting alarms, and analyzing logs and metrics to improve application observability and performance.",
         Image: "../images/certifications/CloudWatch.png",
-        demoUrl: "#"
+        demoUrl: ""
     }, {
         id: 2,
         title: "Cloud Computing Fundamentals",
@@ -19,7 +19,7 @@ const certis = [
         title: "Job Roles in the Cloud",
         description: "Cloud career paths, responsibilities across cloud engineering, operations, security, architecture, and the essential skills required to work effectively in cloud environments.",
         Image: "../images/certifications/JobRoles.png",
-        demoUrl: "#"
+        demoUrl: ""
     }
 ]
 
@@ -57,7 +57,7 @@ export const CertiSection = () => {
             </div>
 
             <div className="text-center mt-12">
-                <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/Mirito10" target="_blank" rel="noopener noreferrer">
+                <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://certifications-mathiascalderon.vercel.app/" target="_blank" rel="noopener noreferrer">
                     All Certifications <ArrowRight size={16}/>
                 </a>
             </div>
