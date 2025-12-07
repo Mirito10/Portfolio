@@ -19,7 +19,7 @@ const projects = [
         demoUrl: "#",
         githubUrl: "#"
     }, {
-        id: 1,
+        id: 3,
         title: "Project three",
         description: "Description for project three.",
         Image: "../projects/Prueba3.png",
