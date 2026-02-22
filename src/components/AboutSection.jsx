@@ -12,21 +12,20 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Computer Engineering Student & Cloud Enthusiast
+                            Computer Engineering Student | Cloud, Data & AI Builder
                         </h3>
 
                         <p className="text-muted-foreground">
-                             I am a Computer Systems Engineering student at Universidad Latina de Costa Rica, 
-                             with a strong focus on Cloud Computing and modern software solutions. I am passionate 
-                             about designing, building, and optimizing scalable systems using cloud-based 
-                             technologies.
+                             I enjoy working across the stack of modern technologies from cloud infrastructure and distributed systems to data pipelines,
+                            AI models, and emerging tools that push automation and intelligence further.
+                             For me, technology is not just about writing code, but about engineering systems that are efficient, resilient, and meaningful.
                         </p>
 
                         <p className="text-muted-foreground">
-                            My main area of interest is Cloud Computing, complemented by secondary interests 
-                            in Artificial Intelligence and Data Analysis. I am currently earning certifications 
-                            in AWS and Google Cloud, and I already hold several cloud-related certifications, 
-                            strengthening both my theoretical knowledge and practical skills.
+                            Outside of tech, I cultivate discipline and creativity through the gym and long-distance running,
+                             explore ideas through reading, experiment with gastronomy, and fuel my curiosity with astronomy.
+                              I also build ultra-realistic digital worlds in Blender and enjoy video games not only as entertainment,
+                               but as interactive systems that blend design, physics, storytelling, and computation.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -34,7 +33,7 @@ export const AboutSection = () => {
                             <a href="#contact" className="cosmic-button">
                                 Get in Touch
                             </a>
-                            <a href="/projects/Resume/CV_Mathias_Calderon.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primay/10 transition-colors duration-300">
+                            <a href="/projects/Resume/CVMathiasJoseCalderonVasquez.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primay/10 transition-colors duration-300">
                                 Resume
                             </a>
 
@@ -52,8 +51,8 @@ export const AboutSection = () => {
                                         Cloud Computing
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Building and managing scalable cloud solutions using platforms like AWS and 
-                                        Google Cloud, with a focus on best practices and security.
+                                        Building and managing scalable cloud solutions using platforms like AWS,
+                                         with a focus on best practices and security.
                                     </p>
                                 </div>
                             </div>

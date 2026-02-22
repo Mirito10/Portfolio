@@ -4,10 +4,10 @@ import { ArrowRight, ExternalLinkIcon } from "lucide-react";
 const certis = [
     {
         id: 1,
-        title: "Amazon CloudWatch",
-        description: "Foundational knowledge in monitoring AWS resources, creating dashboards, setting alarms, and analyzing logs and metrics to improve application observability and performance.",
-        Image: "../images/certifications/CloudWatch.png",
-        demoUrl: ""
+        title: "ETC Certificate – CEFR C1 (Advanced English)",
+        description: "Awarded by ETC International College, this certificate validates advanced English proficiency at the CEFR C1 level.",
+        Image: "../images/certifications/ETCInternationalCollege.png",
+        demoUrl: null
     }, {
         id: 2,
         title: "Cloud Computing Fundamentals",
@@ -16,10 +16,10 @@ const certis = [
         demoUrl: "https://www.credly.com/badges/3af70445-30b7-47af-ae34-83279959a2f8/public_url",
     }, {
         id: 3,
-        title: "Job Roles in the Cloud",
-        description: "Cloud career paths, responsibilities across cloud engineering, operations, security, architecture, and the essential skills required to work effectively in cloud environments.",
-        Image: "../images/certifications/JobRoles.png",
-        demoUrl: ""
+        title: "AWS Cloud Practitioner Essentials",
+        description: "this certificate confirms foundational knowledge of cloud computing concepts and core AWS services.",
+        Image: "../images/certifications/Feb2026-AWS-CloudPractioner-AWSCloudPractionerEssentials.png",
+        demoUrl: null
     }
 ]
 
@@ -27,7 +27,7 @@ const certis = [
 export const CertiSection = () => {
     return <section id="certis" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center"> Certifications</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center"> Degrees & Certifications</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -46,9 +46,11 @@ export const CertiSection = () => {
 
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
+                                    {certi.demoUrl && (
                                     <a href={certi.demoUrl} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <ExternalLinkIcon className="w-5 h-5 hover:text-primary/80" size={20}/>
                                     </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -58,7 +60,7 @@ export const CertiSection = () => {
 
             <div className="text-center mt-12">
                 <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://certifications-mathiascalderon.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    All Certifications <ArrowRight size={16}/>
+                    All Degrees & Certifications <ArrowRight size={16}/>
                 </a>
             </div>
         </div>
