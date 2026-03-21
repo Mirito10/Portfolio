@@ -10,14 +10,14 @@ const certis = [
         demoUrl: null
     }, {
         id: 2,
-        title: "Cloud Computing Fundamentals",
-        description: "Solid understanding of core cloud concepts, service models, deployment models, virtualization, and the foundational principles behind modern cloud architectures.",
-        Image: "../images/certifications/IBMCCF.png",
-        demoUrl: "https://www.credly.com/badges/3af70445-30b7-47af-ae34-83279959a2f8/public_url",
+        title: "MySQL Bootcamp",
+        description: "Comprehensive introduction to MySQL, covering SQL fundamentals, data analysis, joins, and real-world querying to extract insights from data.",
+        Image: "../images/certifications/Mar2026-Udemy-MySQL_Bootcamp.png",
+        demoUrl: "https://ude.my/UC-822c8861-5f5c-4a97-b4ed-40a792f04729",
     }, {
         id: 3,
         title: "AWS Cloud Practitioner Essentials",
-        description: "this certificate confirms foundational knowledge of cloud computing concepts and core AWS services.",
+        description: "This certificate confirms foundational knowledge of cloud computing concepts and core AWS services.",
         Image: "../images/certifications/Feb2026-AWS-CloudPractioner-AWSCloudPractionerEssentials.png",
         demoUrl: null
     }
