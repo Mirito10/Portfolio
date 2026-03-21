@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, MapPin, Send, Linkedin, Instagram } from "lucide-react";
+import { Mail, MessageCircle, MapPin, Send, Linkedin, Instagram, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -122,6 +122,10 @@ export const ContactSection = () => {
                                 <a href="https://www.linkedin.com/in/mathias-calderon-64685b332" target="_blank" rel="noopener noreferrer"
 >
                                     <Linkedin />
+                                </a>
+                                <a href="https://github.com/Mirito10" target="_blank" rel="noopener noreferrer"
+>
+                                    <Github />
                                 </a>
                             </div>
                         </div>
