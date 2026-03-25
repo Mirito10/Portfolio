@@ -6,7 +6,7 @@ const projects = [
         id: 1,
         title: "AI Gym Plannes",
         description: "An AI-powered fitness web application that generates personalized workout plans based on each user’s profile.",
-        Image: "../public/images/projects/AIGymPlanner.png",
+        Image: "/images/projects/AIGymPlanner.png",
         tags: ["AI", "Health Tech", "Typescript", "Vite", "NodeJS", "PostgreSQL", "SaaS"],
         demoUrl: "https://ai-gym-planner-two.vercel.app/",
         githubUrl: "https://github.com/Mirito10/AIGymPlanner.git"
