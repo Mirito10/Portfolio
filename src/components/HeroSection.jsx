@@ -13,7 +13,9 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-3"> Calderon</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                        Junior Cloud Engineer & Software Developer focused on building scalable cloud and web solutions with modern technologies.
+                        Computer Systems Engineering Graduate focused on cloud computing and cybersecurity.
+                        I build scalable web solutions, backend systems,
+                        and cloud ready applications with a strong security mindset.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

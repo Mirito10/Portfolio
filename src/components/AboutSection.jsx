@@ -16,16 +16,16 @@ export const AboutSection = () => {
                         </h3>
 
                         <p className="text-muted-foreground">
-                             I enjoy working across the stack of modern technologies from cloud infrastructure and distributed systems to data pipelines,
-                            AI models, and emerging tools that push automation and intelligence further.
-                             For me, technology is not just about writing code, but about engineering systems that are efficient, resilient, and meaningful.
+                            I work across modern technology stacks, with a strong focus on cloud computing and cybersecurity. 
+                            I design and build scalable applications, APIs, and cloud ready solutions while applying a security first mindset to ensure reliability and resilience.
+                            For me, technology goes beyond writing code, it is about engineering systems that are efficient, secure, and capable of solving real-world problems.
                         </p>
 
                         <p className="text-muted-foreground">
-                            Outside of tech, I cultivate discipline and creativity through the gym and long-distance running,
-                             explore ideas through reading, experiment with gastronomy, and fuel my curiosity with astronomy.
-                              I also build ultra-realistic digital worlds in Blender and enjoy video games not only as entertainment,
-                               but as interactive systems that blend design, physics, storytelling, and computation.
+                            Outside of technology, I build discipline and creativity through the gym and long-distance running, 
+                            and I constantly explore new ideas through reading and hands-on experimentation. I am particularly interested in how systems
+                            integrate design, logic, and performance to create meaningful experiences.
+                            This mindset drives how I approach engineering: with curiosity, structure, and a focus on continuous improvement.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -51,8 +51,8 @@ export const AboutSection = () => {
                                         Cloud Computing
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Building and managing scalable cloud solutions using platforms like AWS,
-                                         with a focus on best practices and security.
+                                        Designing and deploying scalable cloud based systems using AWS, 
+                                        with a focus on secure architectures, backend services, and performance optimization.
                                     </p>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ export const AboutSection = () => {
                                     </h4>
                                     <p className="text-muted-foreground">
                                         Exploring machine learning and AI concepts to create smarter applications and 
-                                        data-driven solutions.
+                                        data driven solutions.
                                     </p>
                                 </div>
                             </div>
@@ -80,11 +80,11 @@ export const AboutSection = () => {
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">
-                                        Data Analysis
+                                        Cybersecurity
                                     </h4>
                                     <p className="text-muted-foreground">
-                                        Analyzing and interpreting data to extract insights that support decision-making 
-                                        and improve system performance.
+                                        Identifying and analyzing security risks in applications and APIs,
+                                        with a focus on access control, vulnerability detection, and secure system design.
                                     </p>
                                 </div>
                             </div>
